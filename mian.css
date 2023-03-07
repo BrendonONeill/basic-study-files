@@ -1,0 +1,182 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body
+{
+    background-color: chartreuse;
+}
+
+.header-nav
+{
+    background-color: white;
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo
+{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list
+{
+    flex-basis: 50%;
+   
+}
+
+.nav-list ul
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-list ul li
+{
+    padding: 1.5rem;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.nav-list ul li:hover
+{
+    background-color: lime;
+}
+
+.nav-list ul li:hover > .dropdown
+{
+    padding: 2rem;
+    background-color: lime;
+    color: black;
+    height: 30vh;
+    position: absolute;
+    bottom: -475px;
+    left: 0;
+    width: 1600px;
+    display: block;
+}
+
+.dropdown
+{
+    display: none;
+}
+
+.hero
+{
+    min-height: 50vh;
+    width: 1600px;
+    background-color: chocolate;
+    margin: 0 auto;
+}
+
+.pop
+{
+    background-color: aliceblue;
+    width: 1600px;
+    margin: auto;
+    padding: 1rem 0;
+    transition: all 0.4s;
+}
+
+.main-nav
+{
+    background-color: gray;
+    width: 100%;
+    height: 150px;
+}
+
+.main-content{
+    padding: 0;
+    max-height: 0;
+    background-color: white;
+    color: transparent;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.main-content-active
+{
+    padding: 2rem;
+    color: black;
+    overflow: none;
+    width: 100%;
+    max-height: 100%;
+}
+
+.modal
+{
+    visibility: hidden;
+    background-color: white;
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.modal-active
+{
+    visibility: visible;
+}
+
+.modal-bg
+{
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.modal-bg-active
+{
+    visibility: visible;
+}
+
+.cardSlider
+{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-grid
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cards
+{
+    background-color: white;
+    height: 300px;
+    width: 200px;
+}
+
